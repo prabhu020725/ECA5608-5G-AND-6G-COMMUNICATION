@@ -1,0 +1,39 @@
+
+% Evolution of Mobile Communication Generations
+
+clear;
+clc;
+close all;
+
+%% 1. Define Mobile Generations
+
+generation = ["1G"; "2G"; "2G"; "3G"; "4G"; "5G"];
+
+%% 2. Define Communication Systems
+
+system = ["AMPS"; "GSM"; "IS-95"; "UMTS"; "LTE"; "5G NR"];
+
+%% 3. Define Multiple Access Methods
+
+accessMethod = ["FDMA"; "TDMA"; "CDMA"; "WCDMA"; "OFDMA"; "OFDMA-based"];
+
+%% 4. Define the Key Idea of Each System
+
+keyIdea = [
+    "Separate frequency channels";
+    "Separate time slots";
+    "Code-based user separation";
+    "Wideband code-based access";
+    "Orthogonal frequency resources";
+    "Flexible OFDM-based radio access"
+];
+
+%% 5. Create the Evolution Table
+
+evolutionTable = table( ...
+    generation, system, accessMethod, keyIdea);
+
+%% 6. Display the Table
+
+disp('Evolution of Mobile Communication Generations');
+disp(evolutionTable);
